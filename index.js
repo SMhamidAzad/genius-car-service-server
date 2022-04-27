@@ -95,7 +95,9 @@ async function run() {
     }
 }
 run().catch(console.dir)
-
+app.get('/hero', (req, res)=>{
+    res.send('hero is waiting for heroku')
+})
 app.get('/', (req, res) => {
     res.send("Running Genius Server")
 })
